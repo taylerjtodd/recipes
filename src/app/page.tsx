@@ -3,12 +3,17 @@
 import { useState } from "react";
 import Link from "next/link";
 import recipes from "@/data/recipes.json";
+import { Recipe } from "@/types/recipe";
+
+const searchString = (recipe: Recipe) => {
+  return `${recipe.title}|${recipe.tags.join(", ")}|${recipe.category}|${recipe.ingredients.map(i => i.name).join('|')}`
+}
 
 export default function Home() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredRecipes = recipes.filter((recipe) =>
-    recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
+    searchString(recipe).toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
