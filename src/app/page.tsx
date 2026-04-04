@@ -1,0 +1,48 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import recipes from "@/data/recipes.json";
+
+export default function Home() {
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredRecipes = recipes.filter((recipe) =>
+    recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  return (
+    <div className="container mx-auto p-4">
+      <h1 className="text-4xl font-bold mb-4">My Recipes</h1>
+      <input
+        type="text"
+        placeholder="Search for a recipe"
+        className="w-full p-2 mb-4 border rounded"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      <table className="w-full border-collapse">
+        <thead>
+          <tr>
+            <th className="border p-2 text-left">Title</th>
+            <th className="border p-2 text-left">Category</th>
+            <th className="border p-2 text-left">Tags</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredRecipes.map((recipe) => (
+            <tr key={recipe.title}>
+              <td className="border p-2">
+                <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`}>
+                  {recipe.title}
+                </Link>
+              </td>
+              <td className="border p-2">{recipe.category}</td>
+              <td className="border p-2">{recipe.tags.join(", ")}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
