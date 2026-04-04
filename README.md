@@ -20,6 +20,17 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Managing Recipes
+
+To add a new recipe, create a new JSON file in the `src/data/recipes` directory. Each file should contain a single recipe object.
+
+After adding or modifying recipe files, run the following command to combine them into a single `recipes.json` file that the application uses:
+
+```bash
+npm run combine-recipes
+```
+
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
