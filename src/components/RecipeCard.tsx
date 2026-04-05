@@ -1,4 +1,5 @@
 import { Recipe } from "@/types/recipe";
+import { formatMeasurement } from "@/utils/formatters";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
@@ -20,7 +21,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
           <ul>
             {recipe.ingredients.map((ingredient) => (
               <li key={ingredient.name}>
-                {ingredient.quantity} {ingredient.unit} {ingredient.name}
+                {formatMeasurement(ingredient.quantity)} {ingredient.unit} {ingredient.name}
               </li>
             ))}
           </ul>

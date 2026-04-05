@@ -2,7 +2,9 @@
     {
         "title": "Cookie Dough Overnight Oats",
         "category": "Breakfast",
-        "tags": [],
+        "tags": [
+            "meal prep"
+        ],
         "ingredients": [
             {
                 "name": "Rolled Oats",
