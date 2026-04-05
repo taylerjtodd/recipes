@@ -2,17 +2,17 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Recipe } from "@/types/recipe";
+import { Recipe, COMMON_UNITS } from "@/types/recipe";
 
 export default function NewRecipe() {
-  const [recipe, setRecipe] = useState<Recipe>({
+  const [recipe, setRecipe] = useState({
     title: "",
     category: "",
-    tags: [],
-    ingredients: [],
-    steps: [],
-    servings: 1,
-    serving_size: 1,
+    tags: [] as string[],
+    ingredients: [] as Recipe["ingredients"],
+    steps: [] as string[],
+    servings: 1 as number | string,
+    serving_size: 1 as number | string,
     serving_size_units: "",
   });
 
@@ -20,7 +20,7 @@ export default function NewRecipe() {
   const [stepInput, setStepInput] = useState("");
   const [ingredientInput, setIngredientInput] = useState({
     name: "",
-    quantity: 1,
+    quantity: 1 as number | string,
     unit: "",
   });
   const [copied, setCopied] = useState(false);
@@ -164,7 +164,7 @@ export default function NewRecipe() {
                 required
                 style={inputStyle}
                 value={recipe.servings}
-                onChange={(e) => setRecipe({ ...recipe, servings: Number(e.target.value) })}
+                onChange={(e) => setRecipe({ ...recipe, servings: e.target.value })}
               />
             </label>
             <label style={{ flex: 1 }}>
@@ -176,7 +176,7 @@ export default function NewRecipe() {
                 required
                 style={inputStyle}
                 value={recipe.serving_size}
-                onChange={(e) => setRecipe({ ...recipe, serving_size: Number(e.target.value) })}
+                onChange={(e) => setRecipe({ ...recipe, serving_size: e.target.value })}
               />
             </label>
             <label style={{ flex: 1 }}>
@@ -234,9 +234,10 @@ export default function NewRecipe() {
               step="0.1"
               style={{ ...inputStyle, marginBottom: 0, flex: 1 }}
               value={ingredientInput.quantity}
-              onChange={(e) => setIngredientInput({ ...ingredientInput, quantity: Number(e.target.value) })}
+              onChange={(e) => setIngredientInput({ ...ingredientInput, quantity: e.target.value })}
             />
             <input
+              list="units-list"
               type="text"
               placeholder="Unit (e.g. g, tbsp)"
               style={{ ...inputStyle, marginBottom: 0, flex: 1 }}
@@ -244,6 +245,11 @@ export default function NewRecipe() {
               onChange={(e) => setIngredientInput({ ...ingredientInput, unit: e.target.value })}
               onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); addIngredient(); } }}
             />
+            <datalist id="units-list">
+              {COMMON_UNITS.map((unit) => (
+                <option key={unit} value={unit} />
+              ))}
+            </datalist>
             <button type="button" onClick={addIngredient} style={secondaryBtnStyle}>Add</button>
           </div>
           <ul style={{ listStylePosition: "inside", padding: 0, margin: 0 }}>

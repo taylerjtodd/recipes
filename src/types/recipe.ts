@@ -12,3 +12,26 @@ export interface Recipe {
   serving_size: number;
   serving_size_units: string;
 }
+
+export const COMMON_UNITS = [
+  "g",
+  "kg",
+  "mg",
+  "oz",
+  "lb",
+  "tsp",
+  "tbsp",
+  "fl oz",
+  "cup",
+  "pt",
+  "qt",
+  "gal",
+  "ml",
+  "l",
+  "pinch",
+  "dash",
+  "clove",
+  "slice",
+  "piece",
+  "whole"
+];

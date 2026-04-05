@@ -71,6 +71,130 @@
     "serving_size_units": "bowl"
   },
   {
+    "title": "Cookie Dough Overnight Oats",
+    "category": "Breakfast",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Almond Milk",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Peanut Butter",
+        "quantity": 4,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Flax Seeds (optional)",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Yogurt",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "name": "Dates (large)",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Dark Chocolate (chopped)",
+        "quantity": 1,
+        "unit": "square"
+      },
+      {
+        "name": "Vanilla",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Chop dates and chocolate",
+      "Combine all ingredients",
+      "Refrigerate overnight or up to several days"
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "bowl"
+  },
+  {
+    "title": "Italian Sausage Seasoning",
+    "category": "Spice Mix",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garlic powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "onion powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "basil - dried",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "black pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "paprika",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "oregano",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "italian seasoning",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "crushed red pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "name": "fennel seed",
+        "quantity": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Crush fennel seed",
+      "Combine all ingredients"
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "lb"
+  },
+  {
     "title": "Spaghetti Carbonara",
     "category": "Pasta",
     "tags": [
