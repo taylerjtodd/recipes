@@ -18,7 +18,12 @@ export default function Home() {
 
   return (
     <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem" }}>
-      <h1 style={{ fontSize: "2.25rem", fontWeight: "bold", marginBottom: "1rem" }}>My Recipes</h1>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+        <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', margin: 0 }}>My Recipes</h1>
+        <Link href="/recipes/new" style={{ padding: '0.5rem 1rem', backgroundColor: '#0070f3', color: 'white', borderRadius: '0.25rem', textDecoration: 'none' }}>
+          Add Recipe
+        </Link>
+      </div>
       <input
         type="text"
         placeholder="Search for a recipe"
