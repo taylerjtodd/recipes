@@ -1,6 +1,14 @@
 Scale recipe when viewing
 * Allow user to halve, double or enter scalar
 
+Add back tailwind
+* does this need a defined theme too?
+
+Dark mode
+* Store user settings in local storage
+
+Better UI (paper and stuff)
+
 Multipart recipes
 * like for cake vs frosting
 * in builder, add a section for adding sections
