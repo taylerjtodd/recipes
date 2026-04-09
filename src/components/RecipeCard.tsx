@@ -1,5 +1,6 @@
 import { Recipe } from "@/types/recipe";
 import { formatMeasurement } from "@/utils/formatters";
+import InstructionStep from "@/components/InstructionStep";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
@@ -28,7 +29,9 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
           <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1rem" }}>Steps</h2>
           <ol>
             {recipe.steps.map((step, index) => (
-              <li key={index}>{step}</li>
+              <li key={index} style={{ marginBottom: "0.5rem" }}>
+                <InstructionStep step={step} ingredients={recipe.ingredients} />
+              </li>
             ))}
           </ol>
         </>

@@ -16,10 +16,10 @@
       { "name": "Heavy Cream", "quantity": 200, "unit": "ml" }
     ],
     "steps": [
-      "Cut the chicken into bite-sized pieces and marinate in a mixture of yogurt, ginger-garlic paste, garam masala, turmeric, cumin, coriander, and chili powder for at least 30 minutes.",
+      "Cut the chicken into bite-sized pieces and marinate in a mixture of {{yogurt}}, {{ginger-garlic paste}}, {{garam masala}}, {{turmeric}}, {{cumin}}, {{coriander}}, and {{chili powder}} for at least 30 minutes.",
       "Heat oil in a large skillet over medium-high heat and cook the chicken until browned.",
-      "Add the tomato puree and cook for 5 minutes, stirring occasionally.",
-      "Stir in the heavy cream and simmer for 10-15 minutes, or until the sauce has thickened.",
+      "Add the {{tomato puree}} and cook for 5 minutes, stirring occasionally.",
+      "Stir in the {{heavy cream}} and simmer for 10-15 minutes, or until the sauce has thickened.",
       "Serve with rice and naan bread."
     ],
     "servings": 4,

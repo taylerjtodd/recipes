@@ -3,6 +3,7 @@ export interface Recipe {
   category: string;
   tags: string[];
   ingredients: {
+    key?: string;
     name: string;
     quantity: number;
     unit: string;

@@ -41,17 +41,35 @@ export default function NewRecipe() {
 
   const addIngredient = () => {
     if (ingredientInput.name.trim()) {
-      setRecipe((r) => ({
-        ...r,
-        ingredients: [
-          ...r.ingredients,
-          {
-            name: ingredientInput.name.trim(),
-            quantity: Number(ingredientInput.quantity),
-            unit: ingredientInput.unit.trim(),
-          },
-        ],
-      }));
+      setRecipe((r) => {
+        const newIngr: any = {
+          name: ingredientInput.name.trim(),
+          quantity: Number(ingredientInput.quantity),
+          unit: ingredientInput.unit.trim(),
+        };
+        
+        const existingCopies = r.ingredients.filter(i => i.name.toLowerCase() === newIngr.name.toLowerCase());
+        let newIngredients = [...r.ingredients];
+        
+        if (existingCopies.length > 0) {
+            // First time a duplicate arrives, set the original's key to include '-1'
+            if (existingCopies.length === 1 && !existingCopies[0].key) {
+                const originalIdx = r.ingredients.findIndex(i => i.name.toLowerCase() === newIngr.name.toLowerCase());
+                newIngredients[originalIdx] = {
+                   ...newIngredients[originalIdx],
+                   key: `${newIngredients[originalIdx].name.toLowerCase().replace(/\s+/g, '-')}-1`
+                };
+            }
+            newIngr.key = `${newIngr.name.toLowerCase().replace(/\s+/g, '-')}-${existingCopies.length + 1}`;
+        }
+        
+        newIngredients.push(newIngr);
+
+        return {
+          ...r,
+          ingredients: newIngredients,
+        };
+      });
       setIngredientInput({ name: "", quantity: 1, unit: "" });
     }
   };
@@ -255,7 +273,12 @@ export default function NewRecipe() {
           <ul style={{ listStylePosition: "inside", padding: 0, margin: 0 }}>
             {recipe.ingredients.map((ing, index) => (
               <li key={index} style={{ marginBottom: "0.25rem" }}>
-                {ing.quantity} {ing.unit} {ing.name}
+                {ing.quantity} {ing.unit} {ing.name}{" "}
+                {ing.key && (
+                  <span style={{ color: "#666", fontSize: "0.85em" }}>
+                    (use {"{{"}{ing.key}{"}}"})
+                  </span>
+                )}
                 <button type="button" onClick={() => removeIngredient(index)} style={{ background: "transparent", border: "none", color: "red", cursor: "pointer", marginLeft: "1rem" }}>[remove]</button>
               </li>
             ))}
