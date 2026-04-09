@@ -22,6 +22,7 @@ export default function NewRecipe() {
     name: "",
     quantity: 1 as number | string,
     unit: "",
+    notes: "",
   });
   const [copied, setCopied] = useState(false);
 
@@ -47,6 +48,9 @@ export default function NewRecipe() {
           quantity: Number(ingredientInput.quantity),
           unit: ingredientInput.unit.trim(),
         };
+        if (ingredientInput.notes.trim()) {
+          newIngr.notes = ingredientInput.notes.trim();
+        }
         
         const existingCopies = r.ingredients.filter(i => i.name.toLowerCase() === newIngr.name.toLowerCase());
         let newIngredients = [...r.ingredients];
@@ -70,7 +74,7 @@ export default function NewRecipe() {
           ingredients: newIngredients,
         };
       });
-      setIngredientInput({ name: "", quantity: 1, unit: "" });
+      setIngredientInput({ name: "", quantity: 1, unit: "", notes: "" });
     }
   };
 
@@ -261,6 +265,13 @@ export default function NewRecipe() {
               style={{ ...inputStyle, marginBottom: 0, flex: 1 }}
               value={ingredientInput.unit}
               onChange={(e) => setIngredientInput({ ...ingredientInput, unit: e.target.value })}
+            />
+            <input
+              type="text"
+              placeholder="Notes (e.g. chopped)"
+              style={{ ...inputStyle, marginBottom: 0, flex: 1 }}
+              value={ingredientInput.notes}
+              onChange={(e) => setIngredientInput({ ...ingredientInput, notes: e.target.value })}
               onKeyDown={(e) => { if (e.key === "Enter") { e.preventDefault(); addIngredient(); } }}
             />
             <datalist id="units-list">
@@ -273,7 +284,9 @@ export default function NewRecipe() {
           <ul style={{ listStylePosition: "inside", padding: 0, margin: 0 }}>
             {recipe.ingredients.map((ing, index) => (
               <li key={index} style={{ marginBottom: "0.25rem" }}>
-                {ing.quantity} {ing.unit} {ing.name}{" "}
+                {ing.quantity} {ing.unit} {ing.name}
+                {ing.notes ? ` - ${ing.notes}` : ""}
+                {" "}
                 {ing.key && (
                   <span style={{ color: "#666", fontSize: "0.85em" }}>
                     (use {"{{"}{ing.key}{"}}"})

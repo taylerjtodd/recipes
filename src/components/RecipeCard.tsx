@@ -23,6 +23,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
             {recipe.ingredients.map((ingredient) => (
               <li key={ingredient.name}>
                 {formatMeasurement(ingredient.quantity)} {ingredient.unit} {ingredient.name}
+                {ingredient.notes ? ` - ${ingredient.notes}` : ""}
               </li>
             ))}
           </ul>

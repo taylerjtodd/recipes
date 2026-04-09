@@ -7,6 +7,7 @@ export interface Recipe {
     name: string;
     quantity: number;
     unit: string;
+    notes?: string;
   }[];
   steps: string[];
   servings: number;

@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Bean Dip",
+        "category": "Appetizer",
+        "tags": [
+            "Mexican"
+        ],
+        "ingredients": [
+            {
+                "name": "Pinto Beans",
+                "quantity": 15.5,
+                "unit": "oz",
+                "notes": "drained and rinsed"
+            },
+            {
+                "name": "Black Beans",
+                "quantity": 15.5,
+                "unit": "oz",
+                "notes": "drained and rinsed"
+            },
+            {
+                "name": "Plain Greek Yogurt",
+                "quantity": 0.666,
+                "unit": "cup"
+            },
+            {
+                "name": "chipotle",
+                "quantity": 1,
+                "unit": "whole",
+                "notes": "homemade, smoked and frozen"
+            },
+            {
+                "name": "Lime",
+                "quantity": 1,
+                "unit": "whole"
+            },
+            {
+                "name": "Cumin",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Garlic",
+                "quantity": 2,
+                "unit": "clove",
+                "notes": "fresh, or substitute 0.5 tsp dried per clove"
+            },
+            {
+                "name": "Smoked Paprika",
+                "quantity": 0.25,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": 1,
+                "unit": "pinch"
+            }
+        ],
+        "steps": [
+            "Remove stem from {{chipotle}}",
+            "Add chipotle, {{pinto beans}}, half of the {{black beans}}, {{plain greek yogurt}}, juice from {{lime}}, salt and spices to blender or food processor",
+            "Blend until smooth",
+            "If the mixture is too thick, you can add a little salsa",
+            "Add remaining black beans"
+        ],
+        "servings": 10,
+        "serving_size": 1,
+        "serving_size_units": "scoop"
+    }
+]
