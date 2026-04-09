@@ -5,6 +5,11 @@
         "tags": [],
         "ingredients": [
             {
+                "name": "fennel seed",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
                 "name": "salt",
                 "quantity": 1,
                 "unit": "tsp"
@@ -40,7 +45,7 @@
                 "unit": "tsp"
             },
             {
-                "name": "italian seasoning",
+                "name": "Italian seasoning",
                 "quantity": 0.25,
                 "unit": "tsp"
             },
@@ -48,15 +53,10 @@
                 "name": "crushed red pepper",
                 "quantity": 0.125,
                 "unit": "tsp"
-            },
-            {
-                "name": "fennel seed",
-                "quantity": 1,
-                "unit": "tsp"
             }
         ],
         "steps": [
-            "Crush fennel seed",
+            "Crush fennel seed in mortar and pestle or spice grinder",
             "Combine all ingredients"
         ],
         "servings": 1,

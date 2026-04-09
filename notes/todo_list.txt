@@ -1,4 +1,20 @@
 Scale recipe when viewing
-Multipart recipes - cake vs frosting
+* Allow user to halve, double or enter scalar
+
+Multipart recipes
+* like for cake vs frosting
+* in builder, add a section for adding sections
+* if sections exist, require on each ingredient/step
+* in view, separate and group by section
+
 Convertible units
-Ingredient notes
+* Would need to differentiate valume vs weight and provide conversions
+
+Store added/edited recipes in local storage?
+* Would need an export/import
+
+Store recipe modifications in local storage
+* Like scaling or unit conversions
+
+Editing recipes
+* still just export to clipboard
