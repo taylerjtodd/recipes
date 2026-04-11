@@ -109,13 +109,7 @@ export default function NewRecipe() {
   const secondaryBtnClassName = "px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors";
 
   return (
-    <div className="max-w-3xl mx-auto p-4">
-      <Link href="/" className="mb-4 inline-block">
-        &larr; Back to Recipes
-      </Link>
-      <h1 className="text-4xl font-bold mb-8">
-        Create New Recipe
-      </h1>
+    <div className="max-w-3xl mx-auto p-4 flex flex-col gap-8">
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 

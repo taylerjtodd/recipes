@@ -1,6 +1,5 @@
 import { Recipe } from "@/types/recipe";
 import recipes from "@/data/recipes.json";
-import Header from "@/components/Header";
 import RecipeCard from "@/components/RecipeCard";
 
 export async function generateStaticParams() {
@@ -19,7 +18,6 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
 
   return (
     <div className="max-w-3xl mx-auto p-4">
-      <Header title={recipe?.title ?? 'Not Found'} />
       <RecipeCard recipe={recipe} />
     </div>
   );

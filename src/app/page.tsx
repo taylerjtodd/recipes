@@ -17,20 +17,19 @@ export default function Home() {
   );
 
   return (
-    <div className="max-w-3xl mx-auto p-4">
-      <div className="flex justify-between items-center mb-4">
-        <h1 className="text-4xl font-bold m-0">My Recipes</h1>
-        <Link href="/recipes/new" unstyled className="px-4 py-2 bg-blue-600 text-white rounded no-underline">
+    <div className="max-w-3xl mx-auto p-4 flex flex-col gap-4">
+      <div className="flex justify-between items-center">
+        <input
+          type="text"
+          placeholder="Search for a recipe"
+          className="w-1/2 p-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 rounded"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+        <Link href="/recipes/new" unstyled className="px-4 py-2 bg-blue-600 text-white rounded no-underline hover:bg-blue-700 transition-colors">
           Add Recipe
         </Link>
       </div>
-      <input
-        type="text"
-        placeholder="Search for a recipe"
-        className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 rounded"
-        value={searchTerm}
-        onChange={(e) => setSearchTerm(e.target.value)}
-      />
       <table className="w-full border-collapse">
         <thead>
           <tr>
