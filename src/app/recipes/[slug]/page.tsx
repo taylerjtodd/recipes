@@ -18,7 +18,7 @@ export default async function RecipePage({ params }: { params: Promise<{ slug: s
   console.log({ slug, recipe })
 
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem" }}>
+    <div className="max-w-3xl mx-auto p-4">
       <Header title={recipe?.title ?? 'Not Found'} />
       <RecipeCard recipe={recipe} />
     </div>

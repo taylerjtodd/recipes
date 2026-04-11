@@ -17,38 +17,38 @@ export default function Home() {
   );
 
   return (
-    <div style={{ maxWidth: "800px", margin: "0 auto", padding: "1rem" }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
-        <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', margin: 0 }}>My Recipes</h1>
-        <Link href="/recipes/new" style={{ padding: '0.5rem 1rem', backgroundColor: '#0070f3', color: 'white', borderRadius: '0.25rem', textDecoration: 'none' }}>
+    <div className="max-w-3xl mx-auto p-4">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-4xl font-bold m-0">My Recipes</h1>
+        <Link href="/recipes/new" className="px-4 py-2 bg-blue-600 text-white rounded no-underline">
           Add Recipe
         </Link>
       </div>
       <input
         type="text"
         placeholder="Search for a recipe"
-        style={{ width: "100%", padding: "0.5rem", marginBottom: "1rem", border: "1px solid #ccc", borderRadius: "0.25rem" }}
+        className="w-full p-2 mb-4 border border-gray-300 rounded"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <table style={{ width: "100%", borderCollapse: "collapse" }}>
+      <table className="w-full border-collapse">
         <thead>
           <tr>
-            <th style={{ border: "1px solid #ccc", padding: "0.5rem", textAlign: "left" }}>Title</th>
-            <th style={{ border: "1px solid #ccc", padding: "0.5rem", textAlign: "left" }}>Category</th>
-            <th style={{ border: "1px solid #ccc", padding: "0.5rem", textAlign: "left" }}>Tags</th>
+            <th className="border border-gray-300 p-2 text-left">Title</th>
+            <th className="border border-gray-300 p-2 text-left">Category</th>
+            <th className="border border-gray-300 p-2 text-left">Tags</th>
           </tr>
         </thead>
         <tbody>
           {filteredRecipes.map((recipe) => (
             <tr key={recipe.title}>
-              <td style={{ border: "1px solid #ccc", padding: "0.5rem" }}>
+              <td className="border border-gray-300 p-2">
                 <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`}>
                   {recipe.title}
                 </Link>
               </td>
-              <td style={{ border: "1px solid #ccc", padding: "0.5rem" }}>{recipe.category}</td>
-              <td style={{ border: "1px solid #ccc", padding: "0.5rem" }}>{recipe.tags.join(", ")}</td>
+              <td className="border border-gray-300 p-2">{recipe.category}</td>
+              <td className="border border-gray-300 p-2">{recipe.tags.join(", ")}</td>
             </tr>
           ))}
         </tbody>

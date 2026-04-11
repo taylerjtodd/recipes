@@ -18,7 +18,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
             <strong>Serving Size:</strong> {recipe.serving_size}{" "}
             {recipe.serving_size_units}
           </p>
-          <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1rem" }}>Ingredients</h2>
+          <h2 className="text-2xl font-bold mt-4">Ingredients</h2>
           <ul>
             {recipe.ingredients.map((ingredient) => (
               <li key={ingredient.name}>
@@ -27,10 +27,10 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
               </li>
             ))}
           </ul>
-          <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1rem" }}>Steps</h2>
+          <h2 className="text-2xl font-bold mt-4">Steps</h2>
           <ol>
             {recipe.steps.map((step, index) => (
-              <li key={index} style={{ marginBottom: "0.5rem" }}>
+              <li key={index} className="mb-2">
                 <InstructionStep step={step} ingredients={recipe.ingredients} />
               </li>
             ))}
