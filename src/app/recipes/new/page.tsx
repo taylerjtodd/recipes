@@ -105,14 +105,14 @@ export default function NewRecipe() {
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const inputClassName = "w-full p-2 border border-gray-300 rounded";
-  const secondaryBtnClassName = "px-4 py-2 bg-gray-200 text-gray-800 rounded cursor-pointer hover:bg-gray-300 transition-colors";
+  const inputClassName = "w-full p-2 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded";
+  const secondaryBtnClassName = "px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded cursor-pointer hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors";
 
   return (
     <div className="max-w-3xl mx-auto p-4">
       <Link
         href="/"
-        className="text-blue-600 underline mb-4 inline-block hover:text-blue-800"
+        className="text-blue-600 dark:text-blue-400 underline mb-4 inline-block hover:text-blue-800 dark:hover:text-blue-300"
       >
         &larr; Back to Recipes
       </Link>
@@ -123,7 +123,7 @@ export default function NewRecipe() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
         {/* Basic Information */}
-        <section className="border border-gray-200 p-4 rounded-lg">
+        <section className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Basic Info</h2>
 
           <label className="block mb-4">
@@ -186,7 +186,7 @@ export default function NewRecipe() {
         </section>
 
         {/* Tags */}
-        <section className="border border-gray-200 p-4 rounded-lg">
+        <section className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Tags</h2>
           <div className="flex gap-2 mb-4">
             <input
@@ -210,7 +210,7 @@ export default function NewRecipe() {
         </section>
 
         {/* Ingredients */}
-        <section className="border border-gray-200 p-4 rounded-lg">
+        <section className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Ingredients</h2>
           <div className="flex gap-2 mb-4 max-sm:flex-wrap">
             <input
@@ -259,18 +259,18 @@ export default function NewRecipe() {
                 {ing.notes ? ` - ${ing.notes}` : ""}
                 {" "}
                 {ing.key && (
-                  <span className="text-gray-500 text-sm">
+                  <span className="text-gray-500 dark:text-gray-400 text-sm">
                     (use {"{{"}{ing.key}{"}}"})
                   </span>
                 )}
-                <button type="button" onClick={() => removeIngredient(index)} className="bg-transparent border-none text-red-500 cursor-pointer ml-4 hover:text-red-700">[remove]</button>
+                <button type="button" onClick={() => removeIngredient(index)} className="bg-transparent border-none text-red-500 dark:text-red-400 cursor-pointer ml-4 hover:text-red-700 dark:hover:text-red-300">[remove]</button>
               </li>
             ))}
           </ul>
         </section>
 
         {/* Steps */}
-        <section className="border border-gray-200 p-4 rounded-lg">
+        <section className="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Steps</h2>
           <div className="flex gap-2 mb-4">
             <textarea
@@ -285,7 +285,7 @@ export default function NewRecipe() {
             {recipe.steps.map((step, index) => (
               <li key={index} className="mb-2">
                 {step}
-                <button type="button" onClick={() => removeStep(index)} className="bg-transparent border-none text-red-500 cursor-pointer ml-4 hover:text-red-700">[remove]</button>
+                <button type="button" onClick={() => removeStep(index)} className="bg-transparent border-none text-red-500 dark:text-red-400 cursor-pointer ml-4 hover:text-red-700 dark:hover:text-red-300">[remove]</button>
               </li>
             ))}
           </ol>

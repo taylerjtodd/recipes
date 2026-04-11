@@ -27,28 +27,28 @@ export default function Home() {
       <input
         type="text"
         placeholder="Search for a recipe"
-        className="w-full p-2 mb-4 border border-gray-300 rounded"
+        className="w-full p-2 mb-4 border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 rounded"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <table className="w-full border-collapse">
         <thead>
           <tr>
-            <th className="border border-gray-300 p-2 text-left">Title</th>
-            <th className="border border-gray-300 p-2 text-left">Category</th>
-            <th className="border border-gray-300 p-2 text-left">Tags</th>
+            <th className="border border-gray-300 dark:border-gray-700 p-2 text-left">Title</th>
+            <th className="border border-gray-300 dark:border-gray-700 p-2 text-left">Category</th>
+            <th className="border border-gray-300 dark:border-gray-700 p-2 text-left">Tags</th>
           </tr>
         </thead>
         <tbody>
           {filteredRecipes.map((recipe) => (
             <tr key={recipe.title}>
-              <td className="border border-gray-300 p-2">
-                <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`}>
+              <td className="border border-gray-300 dark:border-gray-700 p-2">
+                <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`} className="text-blue-600 dark:text-blue-400 hover:underline">
                   {recipe.title}
                 </Link>
               </td>
-              <td className="border border-gray-300 p-2">{recipe.category}</td>
-              <td className="border border-gray-300 p-2">{recipe.tags.join(", ")}</td>
+              <td className="border border-gray-300 dark:border-gray-700 p-2">{recipe.category}</td>
+              <td className="border border-gray-300 dark:border-gray-700 p-2">{recipe.tags.join(", ")}</td>
             </tr>
           ))}
         </tbody>
