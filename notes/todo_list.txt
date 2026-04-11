@@ -1,8 +1,3 @@
-Nav bar
-* settings
-* recipe title
-* back buttons
-
 Better mobile view
 * less padding/margins so more fits on screen
 

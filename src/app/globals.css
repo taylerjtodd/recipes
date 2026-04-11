@@ -2,5 +2,5 @@
 @custom-variant dark (&:is(.dark *));
 
 body {
-  @apply p-8;
+  @apply p-2 md:p-8;
 }

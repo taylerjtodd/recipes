@@ -1,14 +1,16 @@
+export interface Ingredient {
+  key?: string;
+  name: string;
+  quantity: number;
+  unit: string;
+  notes?: string;
+}
+
 export interface Recipe {
   title: string;
   category: string;
   tags: string[];
-  ingredients: {
-    key?: string;
-    name: string;
-    quantity: number;
-    unit: string;
-    notes?: string;
-  }[];
+  ingredients: Ingredient[];
   steps: string[];
   servings: number;
   serving_size: number;
