@@ -1,15 +1,12 @@
-Scale recipe when viewing
-* Allow user to halve, double or enter scalar
-
-Dark mode
-* Store user settings in local storage
-
 Nav bar
 * settings
 * recipe title
 * back buttons
 
-Better UI (paper and stuff)
+Better mobile view
+* less padding/margins so more fits on screen
+
+Better UI for recipe table
 
 Multipart recipes
 * like for cake vs frosting

@@ -4,9 +4,11 @@ import { formatMeasurement } from "@/utils/formatters";
 export default function InstructionStep({
   step,
   ingredients,
+  scaleFactor = 1,
 }: {
   step: string;
   ingredients: Recipe["ingredients"];
+  scaleFactor?: number;
 }) {
   const parts = step.split(/(\{\{.*?\}\})/g);
 
@@ -27,7 +29,7 @@ export default function InstructionStep({
           if (ingredient) {
             return (
               <strong key={index}>
-                {formatMeasurement(ingredient.quantity)} {ingredient.unit}{" "}
+                {formatMeasurement(ingredient.quantity * scaleFactor)} {ingredient.unit}{" "}
                 {ingredient.name}
               </strong>
             );
