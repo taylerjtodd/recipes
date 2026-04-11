@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/core/Link";
 import { Recipe, COMMON_UNITS } from "@/types/recipe";
 
 export default function NewRecipe() {
@@ -110,10 +110,7 @@ export default function NewRecipe() {
 
   return (
     <div className="max-w-3xl mx-auto p-4">
-      <Link
-        href="/"
-        className="text-blue-600 dark:text-blue-400 underline mb-4 inline-block hover:text-blue-800 dark:hover:text-blue-300"
-      >
+      <Link href="/" className="mb-4 inline-block">
         &larr; Back to Recipes
       </Link>
       <h1 className="text-4xl font-bold mb-8">

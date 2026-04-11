@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Link from "@/components/core/Link";
 import recipes from "@/data/recipes.json";
 import { Recipe } from "@/types/recipe";
 
@@ -20,7 +20,7 @@ export default function Home() {
     <div className="max-w-3xl mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-4xl font-bold m-0">My Recipes</h1>
-        <Link href="/recipes/new" className="px-4 py-2 bg-blue-600 text-white rounded no-underline">
+        <Link href="/recipes/new" unstyled className="px-4 py-2 bg-blue-600 text-white rounded no-underline">
           Add Recipe
         </Link>
       </div>
@@ -43,7 +43,7 @@ export default function Home() {
           {filteredRecipes.map((recipe) => (
             <tr key={recipe.title}>
               <td className="border border-gray-300 dark:border-gray-700 p-2">
-                <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`} className="text-blue-600 dark:text-blue-400 hover:underline">
+                <Link href={`/recipes/${recipe.title.toLowerCase().replace(/ /g, "-")}`}>
                   {recipe.title}
                 </Link>
               </td>
