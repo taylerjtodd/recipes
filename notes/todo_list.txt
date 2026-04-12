@@ -1,5 +1,4 @@
-Better mobile view
-* less padding/margins so more fits on screen
+Share Button
 
 Better UI for recipe table
 
@@ -19,4 +18,7 @@ Store recipe modifications in local storage
 * Like scaling or unit conversions
 
 Editing recipes
+* edit existing recipe
+* edit ingredients
+* edit steps
 * still just export to clipboard
