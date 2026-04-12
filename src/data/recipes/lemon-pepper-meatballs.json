@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Lemon Pepper Meatballs",
+    "category": "Dinner",
+    "tags": [
+      "pesto",
+      "pasta"
+    ],
+    "ingredients": [
+      {
+        "name": "Ground Turkey",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Panko",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Parmesan Cheese",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "grated"
+      },
+      {
+        "name": "Minced Garlic",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Lemon Zest",
+        "quantity": 0.75,
+        "unit": "whole"
+      },
+      {
+        "name": "Fresh Parsley",
+        "quantity": 2,
+        "unit": "tbsp",
+        "notes": "chopped"
+      },
+      {
+        "name": "Salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Mix all ingredients",
+      "Form into balls",
+      "Sear on stovetop",
+      "Finish in oven"
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "lb"
+  }
+]

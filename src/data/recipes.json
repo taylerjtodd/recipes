@@ -68,75 +68,201 @@
     "serving_size_units": "scoop"
   },
   {
-    "title": "Chicken Tikka Masala",
-    "category": "Curry",
-    "tags": [
-      "curry",
-      "indian",
-      "dinner"
-    ],
+    "title": "Bircher Muesli",
+    "category": "Breakfast",
+    "tags": [],
     "ingredients": [
       {
-        "name": "Chicken Breast",
-        "quantity": 500,
-        "unit": "g"
+        "name": "Apple",
+        "quantity": 1,
+        "unit": "whole"
       },
       {
-        "name": "Yogurt",
-        "quantity": 150,
-        "unit": "g"
+        "name": "Lemon Juice",
+        "quantity": 1,
+        "unit": "tbsp"
       },
       {
-        "name": "Ginger-Garlic Paste",
+        "name": "Rolled Oats",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Almond Milk",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Greek Yogurt",
+        "quantity": 0.5,
+        "unit": "cup",
+        "notes": "vanilla or plain"
+      },
+      {
+        "name": "Dates",
+        "quantity": 3,
+        "unit": "whole",
+        "notes": "large, or raisins and maple syrup"
+      },
+      {
+        "name": "Dried Cherries",
         "quantity": 2,
         "unit": "tbsp"
       },
       {
-        "name": "Garam Masala",
-        "quantity": 1,
-        "unit": "tbsp"
+        "name": "Blueberries",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "frozen or fresh"
       },
       {
-        "name": "Turmeric",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "Cumin",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "Coriander",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "Chili Powder",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "name": "Tomato Puree",
-        "quantity": 400,
-        "unit": "g"
-      },
-      {
-        "name": "Heavy Cream",
-        "quantity": 200,
-        "unit": "ml"
+        "name": "Nuts",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "roughly chopped"
       }
     ],
     "steps": [
-      "Cut the chicken into bite-sized pieces and marinate in a mixture of {{yogurt}}, {{ginger-garlic paste}}, {{garam masala}}, {{turmeric}}, {{cumin}}, {{coriander}}, and {{chili powder}} for at least 30 minutes.",
-      "Heat oil in a large skillet over medium-high heat and cook the chicken until browned.",
-      "Add the {{tomato puree}} and cook for 5 minutes, stirring occasionally.",
-      "Stir in the {{heavy cream}} and simmer for 10-15 minutes, or until the sauce has thickened.",
-      "Serve with rice and naan bread."
+      "Grate {{apple}} and toss with {{lemon juice}}",
+      "Combine {{rolled oats}}, {{chia seeds}}, {{almond milk}}, {{greek yogurt}}, {{dates}}, {{cherries}}",
+      "Refrigerate overnight or up to 4 days",
+      "Top with blueberries an nuts"
     ],
-    "servings": 4,
+    "servings": 2,
     "serving_size": 1,
     "serving_size_units": "bowl"
+  },
+  {
+    "title": "Black Forest Energy Balls",
+    "category": "Snack",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Dates",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Dried Cherries",
+        "quantity": 0.33,
+        "unit": "cup"
+      },
+      {
+        "name": "Almond butter",
+        "quantity": 0.5,
+        "unit": "cup",
+        "notes": "or peanut butter"
+      },
+      {
+        "name": "Greek Yogurt",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "plain or vanilla"
+      },
+      {
+        "name": "Cocoa Powder",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Vanilla",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Rolled Oats",
+        "quantity": 1.33,
+        "unit": "cup"
+      },
+      {
+        "name": "Dark Chocolate",
+        "quantity": 1,
+        "unit": "oz",
+        "notes": "chopped"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Place dates and dried cherries in a small heatproof bowl; cover with boiling water. Let stand until soft, about 10 minutes. Drain well.",
+      "Place the drained dates and cherries in a food processor; pulse until coarsely chopped, about 5 pulses. Add almond butter, yogurt, cocoa, vanilla and salt. Pulse until incorporated, 5 to 10 pulses. Add oats; pulse until fully combined and incorporated, about 15 pulses. (Add 1 tablespoon water if the mixture is too thick and stiff.) Transfer the mixture to a medium bowl. Cover and refrigerate for 10 minutes.",
+      "Spoon about 1 tablespoon of the date mixture onto a sheet of wax paper or parchment paper; roll into a 1-inch ball. Repeat with the remaining date mixture.",
+      "Melt dark chocolate in double boiler",
+      "Drizzle the balls with the melted chocolate; sprinkle with cinnamon. Refrigerate, uncovered, until set, at least 10 minutes."
+    ],
+    "servings": 10,
+    "serving_size": 1,
+    "serving_size_units": "balls"
+  },
+  {
+    "title": "Breakfast Sausage",
+    "category": "Breakfast",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Ground Turkey",
+        "quantity": 1,
+        "unit": "lb",
+        "notes": "or pork"
+      },
+      {
+        "name": "Brown Sugar",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Sage",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "notes": "or 2x dried sage"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Marjoram",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chili Flakes",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Allspice",
+        "quantity": 1,
+        "unit": "pinch",
+        "notes": "or cloves"
+      }
+    ],
+    "steps": [
+      "Mix all spices",
+      "Mix into meat"
+    ],
+    "servings": 8,
+    "serving_size": 0.125,
+    "serving_size_units": "lb"
   },
   {
     "title": "Cookie Dough Overnight Oats",
@@ -204,10 +330,81 @@
     "serving_size_units": "bowl"
   },
   {
+    "title": "Ham and Bean Soup",
+    "category": "Dinner",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Italian Seasoning",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Petite Diced Tomatoes",
+        "quantity": 14.5,
+        "unit": "fl oz",
+        "notes": "drained"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "Crushed Red Pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chicken Broth",
+        "quantity": 32,
+        "unit": "fl oz",
+        "notes": "low sodium"
+      },
+      {
+        "name": "Cannellini Beans",
+        "quantity": 29,
+        "unit": "fl oz",
+        "notes": "drained and rinsed"
+      },
+      {
+        "name": "Diced Ham",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Baby Spinich",
+        "quantity": 2,
+        "unit": "oz",
+        "notes": "each oz is a handful"
+      }
+    ],
+    "steps": [
+      "Add olive oil to pot and cook garlic until fragrant",
+      "Add seasonings",
+      "Combine rest of ingredients EXCEPT spinach",
+      "Boil and then simmer for 20 minutes",
+      "Add {{baby spinach}}"
+    ],
+    "servings": 3,
+    "serving_size": 1,
+    "serving_size_units": "bowls"
+  },
+  {
     "title": "Italian Sausage Seasoning",
     "category": "Spice Mix",
     "tags": [],
     "ingredients": [
+      {
+        "name": "fennel seed",
+        "quantity": 1,
+        "unit": "tsp"
+      },
       {
         "name": "salt",
         "quantity": 1,
@@ -244,7 +441,7 @@
         "unit": "tsp"
       },
       {
-        "name": "italian seasoning",
+        "name": "Italian seasoning",
         "quantity": 0.25,
         "unit": "tsp"
       },
@@ -252,15 +449,10 @@
         "name": "crushed red pepper",
         "quantity": 0.125,
         "unit": "tsp"
-      },
-      {
-        "name": "fennel seed",
-        "quantity": 1,
-        "unit": "tsp"
       }
     ],
     "steps": [
-      "Crush fennel seed",
+      "Crush fennel seed in mortar and pestle or spice grinder",
       "Combine all ingredients"
     ],
     "servings": 1,
@@ -268,50 +460,103 @@
     "serving_size_units": "lb"
   },
   {
-    "title": "Spaghetti Carbonara",
-    "category": "Pasta",
+    "title": "Lemon Pepper Meatballs",
+    "category": "Dinner",
     "tags": [
-      "pasta",
-      "italian",
-      "dinner"
+      "pesto",
+      "pasta"
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "quantity": 400,
-        "unit": "g"
+        "name": "Ground Turkey",
+        "quantity": 1,
+        "unit": "lb"
       },
       {
-        "name": "Guanciale",
-        "quantity": 150,
-        "unit": "g"
+        "name": "Panko",
+        "quantity": 0.5,
+        "unit": "cup"
       },
       {
-        "name": "Eggs",
-        "quantity": 4,
-        "unit": "large"
+        "name": "Parmesan Cheese",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "grated"
       },
       {
-        "name": "Pecorino Romano",
-        "quantity": 50,
-        "unit": "g"
+        "name": "Minced Garlic",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "Egg",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Lemon Zest",
+        "quantity": 0.75,
+        "unit": "whole"
+      },
+      {
+        "name": "Fresh Parsley",
+        "quantity": 2,
+        "unit": "tbsp",
+        "notes": "chopped"
+      },
+      {
+        "name": "Salt",
+        "quantity": 0.5,
+        "unit": "tsp"
       },
       {
         "name": "Black Pepper",
-        "quantity": 1,
+        "quantity": 0.25,
         "unit": "tsp"
       }
     ],
     "steps": [
-      "Cook the spaghetti according to package directions.",
-      "While the spaghetti is cooking, cut the guanciale into small pieces and cook in a large skillet over medium heat until crisp.",
-      "In a small bowl, whisk together the eggs and pecorino romano.",
-      "Once the spaghetti is cooked, drain it and add it to the skillet with the guanciale.",
-      "Remove the skillet from the heat and pour the egg and cheese mixture over the spaghetti, stirring quickly to combine.",
-      "Season with black pepper and serve immediately."
+      "Mix all ingredients",
+      "Form into balls",
+      "Sear on stovetop",
+      "Finish in oven"
     ],
-    "servings": 4,
+    "servings": 1,
     "serving_size": 1,
-    "serving_size_units": "plate"
+    "serving_size_units": "lb"
+  },
+  {
+    "title": "Overnight Oats Base",
+    "category": "Breakfast",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Almond Milk",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Greek Yogurt",
+        "quantity": 0.25,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      "Mix, add desired toppings.",
+      "Refrigerate overnight"
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "bowl"
   }
 ]

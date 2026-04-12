@@ -155,8 +155,6 @@ export default function NewRecipe() {
               <span className="font-bold">Serving Size</span>
               <input
                 type="number"
-                min="0.1"
-                step="0.1"
                 required
                 className={`${inputClassName} mb-2 mt-1`}
                 value={recipe.serving_size}

@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Breakfast Sausage",
+    "category": "Breakfast",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Ground Turkey",
+        "quantity": 1,
+        "unit": "lb",
+        "notes": "or pork"
+      },
+      {
+        "name": "Brown Sugar",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Sage",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "notes": "or 2x dried sage"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Marjoram",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chili Flakes",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Allspice",
+        "quantity": 1,
+        "unit": "pinch",
+        "notes": "or cloves"
+      }
+    ],
+    "steps": [
+      "Mix all spices",
+      "Mix into meat"
+    ],
+    "servings": 8,
+    "serving_size": 0.125,
+    "serving_size_units": "lb"
+  }
+]

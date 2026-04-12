@@ -1,0 +1,36 @@
+[
+  {
+    "title": "Overnight Oats Base",
+    "category": "Breakfast",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Almond Milk",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Greek Yogurt",
+        "quantity": 0.25,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      "Mix, add desired toppings.",
+      "Refrigerate overnight"
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "bowl"
+  }
+]

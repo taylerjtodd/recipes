@@ -1,0 +1,68 @@
+[
+  {
+    "title": "Ham and Bean Soup",
+    "category": "Dinner",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Italian Seasoning",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Petite Diced Tomatoes",
+        "quantity": 14.5,
+        "unit": "fl oz",
+        "notes": "drained"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "name": "Crushed Red Pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chicken Broth",
+        "quantity": 32,
+        "unit": "fl oz",
+        "notes": "low sodium"
+      },
+      {
+        "name": "Cannellini Beans",
+        "quantity": 29,
+        "unit": "fl oz",
+        "notes": "drained and rinsed"
+      },
+      {
+        "name": "Diced Ham",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Baby Spinich",
+        "quantity": 2,
+        "unit": "oz",
+        "notes": "each oz is a handful"
+      }
+    ],
+    "steps": [
+      "Add olive oil to pot and cook garlic until fragrant",
+      "Add seasonings",
+      "Combine rest of ingredients EXCEPT spinach",
+      "Boil and then simmer for 20 minutes",
+      "Add {{baby spinach}}"
+    ],
+    "servings": 3,
+    "serving_size": 1,
+    "serving_size_units": "bowls"
+  }
+]

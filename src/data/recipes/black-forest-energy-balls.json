@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Black Forest Energy Balls",
+        "category": "Snack",
+        "tags": [],
+        "ingredients": [
+            {
+                "name": "Dates",
+                "quantity": 1,
+                "unit": "cup"
+            },
+            {
+                "name": "Dried Cherries",
+                "quantity": 0.33,
+                "unit": "cup"
+            },
+            {
+                "name": "Almond butter",
+                "quantity": 0.5,
+                "unit": "cup",
+                "notes": "or peanut butter"
+            },
+            {
+                "name": "Greek Yogurt",
+                "quantity": 0.25,
+                "unit": "cup",
+                "notes": "plain or vanilla"
+            },
+            {
+                "name": "Cocoa Powder",
+                "quantity": 2,
+                "unit": "tbsp"
+            },
+            {
+                "name": "Vanilla",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "Salt",
+                "quantity": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "Rolled Oats",
+                "quantity": 1.33,
+                "unit": "cup"
+            },
+            {
+                "name": "Dark Chocolate",
+                "quantity": 1,
+                "unit": "oz",
+                "notes": "chopped"
+            },
+            {
+                "name": "Cinnamon",
+                "quantity": 0.5,
+                "unit": "tsp"
+            }
+        ],
+        "steps": [
+            "Place dates and dried cherries in a small heatproof bowl; cover with boiling water. Let stand until soft, about 10 minutes. Drain well.",
+            "Place the drained dates and cherries in a food processor; pulse until coarsely chopped, about 5 pulses. Add almond butter, yogurt, cocoa, vanilla and salt. Pulse until incorporated, 5 to 10 pulses. Add oats; pulse until fully combined and incorporated, about 15 pulses. (Add 1 tablespoon water if the mixture is too thick and stiff.) Transfer the mixture to a medium bowl. Cover and refrigerate for 10 minutes.",
+            "Spoon about 1 tablespoon of the date mixture onto a sheet of wax paper or parchment paper; roll into a 1-inch ball. Repeat with the remaining date mixture.",
+            "Melt dark chocolate in double boiler",
+            "Drizzle the balls with the melted chocolate; sprinkle with cinnamon. Refrigerate, uncovered, until set, at least 10 minutes."
+        ],
+        "servings": 10,
+        "serving_size": 1,
+        "serving_size_units": "balls"
+    }
+]
