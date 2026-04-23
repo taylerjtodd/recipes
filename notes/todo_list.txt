@@ -6,9 +6,6 @@ Multipart recipes
 * if sections exist, require on each ingredient/step
 * in view, separate and group by section
 
-Convertible units
-* Would need to differentiate valume vs weight and provide conversions
-
 Store added/edited recipes in local storage?
 * Would need an export/import
 

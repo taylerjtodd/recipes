@@ -2,16 +2,34 @@
 
 import { useTheme } from "next-themes";
 import { useState, useEffect, useRef } from "react";
+import { usePathname } from "next/navigation";
 
 export function SettingsMenu() {
   const { theme, setTheme } = useTheme();
+  const pathname = usePathname();
   const [mounted, setMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [canShare, setCanShare] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     setMounted(true);
+    setCanShare(!!navigator.share);
   }, []);
+
+  const handleShare = async () => {
+    try {
+      await navigator.share({
+        title: document.title,
+        url: window.location.href,
+      });
+      setIsOpen(false);
+    } catch (err) {
+      if ((err as Error).name !== "AbortError") {
+        console.error("Error sharing:", err);
+      }
+    }
+  };
 
   // Close menu when clicking outside
   useEffect(() => {
@@ -98,6 +116,21 @@ export function SettingsMenu() {
           >
             System
           </button>
+          
+          {canShare && (
+            <>
+              <div className="px-4 py-2 mt-1 text-sm font-semibold text-gray-700 dark:text-gray-300 border-t border-b border-gray-200 dark:border-gray-700">
+                Actions
+              </div>
+              <button
+                onClick={handleShare}
+                className="w-full text-left px-4 py-2 text-sm text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700 flex items-center gap-2"
+              >
+                <span>📤</span>
+                {pathname.includes("/recipes/") ? "Share Recipe" : "Share Page"}
+              </button>
+            </>
+          )}
         </div>
       )}
     </div>

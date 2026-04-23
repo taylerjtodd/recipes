@@ -11,24 +11,6 @@ import Paper from "@/components/core/Paper";
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   const [scaleFactor, setScaleFactor] = useState(1);
   const [unitSystem, setUnitSystem] = useState<UnitSystem>("original");
-  const [canShare, setCanShare] = useState(false);
-
-  useEffect(() => {
-    setCanShare(!!navigator.share);
-  }, []);
-
-  const handleShare = async () => {
-    try {
-      await navigator.share({
-        title: recipe.title,
-        text: `Check out this recipe for ${recipe.title}!`,
-        url: window.location.href,
-      });
-    } catch (err) {
-      console.error("Error sharing:", err);
-    }
-  };
-
 
   return (
     <Paper level={1} className="p-4 md:p-8">
@@ -101,17 +83,6 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
         </div>
 
         <div className="flex items-center gap-3">
-          {canShare && (
-            <button
-              onClick={handleShare}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-xl text-sm font-bold hover:bg-blue-100 dark:hover:bg-blue-800/50 transition-all border border-blue-100 dark:border-blue-800 shadow-sm"
-              aria-label="Share recipe"
-            >
-              <span className="text-lg leading-none">📤</span>
-              Share
-            </button>
-          )}
-
           {(scaleFactor !== 1 || unitSystem !== "original") && (
             <button
               onClick={() => {
