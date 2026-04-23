@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Shwarma Spice",
+        "category": "Seasoning",
+        "tags": [],
+        "ingredients": [
+            {
+                "name": "tumeric",
+                "quantity": 2,
+                "unit": "tsp"
+            },
+            {
+                "name": "cumin",
+                "quantity": 2,
+                "unit": "tsp"
+            },
+            {
+                "name": "coriander",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "garlic powder",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "paprika",
+                "quantity": 1,
+                "unit": "tsp"
+            },
+            {
+                "name": "allspice",
+                "quantity": 0.5,
+                "unit": "tsp"
+            },
+            {
+                "name": "black pepper",
+                "quantity": 0.5,
+                "unit": "tsp"
+            }
+        ],
+        "steps": [
+            "mix"
+        ],
+        "servings": 1,
+        "serving_size": 8,
+        "serving_size_units": "tsp"
+    }
+]
