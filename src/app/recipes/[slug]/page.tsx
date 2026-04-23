@@ -1,6 +1,17 @@
+import { Metadata } from "next";
 import { Recipe } from "@/types/recipe";
 import recipes from "@/data/recipes.json";
 import RecipeCard from "@/components/RecipeCard";
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const recipe = recipes.find(
+    (r) => r.title.toLowerCase().replace(/ /g, "-") === slug
+  );
+  return {
+    title: recipe ? recipe.title : "Recipe Not Found",
+  };
+}
 
 export async function generateStaticParams() {
   return recipes.map((recipe) => ({
