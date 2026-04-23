@@ -1,14 +1,17 @@
 import { Recipe } from "@/types/recipe";
 import { formatMeasurement } from "@/utils/formatters";
+import { UnitSystem, convertForSystem } from "@/utils/units";
 
 export default function InstructionStep({
   step,
   ingredients,
   scaleFactor = 1,
+  unitSystem = "original",
 }: {
   step: string;
   ingredients: Recipe["ingredients"];
   scaleFactor?: number;
+  unitSystem?: UnitSystem;
 }) {
   const parts = step.split(/(\{\{.*?\}\})/g);
 
@@ -27,9 +30,10 @@ export default function InstructionStep({
           }
 
           if (ingredient) {
+            const { quantity: displayQuantity, unit: displayUnit } = convertForSystem(ingredient.quantity, ingredient.unit, unitSystem);
             return (
               <strong key={index}>
-                {formatMeasurement(ingredient.quantity * scaleFactor)} {ingredient.unit}{" "}
+                {formatMeasurement(displayQuantity * scaleFactor)} {displayUnit}{" "}
                 {ingredient.name}
               </strong>
             );

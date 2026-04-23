@@ -1,5 +1,3 @@
-Share Button
-
 Better UI for recipe table
 
 Multipart recipes

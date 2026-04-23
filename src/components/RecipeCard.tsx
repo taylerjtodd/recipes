@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react";
 import { Recipe } from "@/types/recipe";
 import { formatMeasurement } from "@/utils/formatters";
+import { UnitSystem } from "@/utils/units";
 import InstructionStep from "@/components/InstructionStep";
 import Ingredient from "@/components/Ingredient";
 import Paper from "@/components/core/Paper";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   const [scaleFactor, setScaleFactor] = useState(1);
+  const [unitSystem, setUnitSystem] = useState<UnitSystem>("original");
   const [canShare, setCanShare] = useState(false);
 
   useEffect(() => {
@@ -30,48 +32,71 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
 
   return (
     <Paper level={1} className="p-4 md:p-8">
-      <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-6 border-b border-slate-100 dark:border-slate-800">
-        <div className="flex flex-col gap-1.5">
-          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 ml-1">
-            Recipe Scale
-          </span>
-          <div className="flex items-center bg-slate-50 dark:bg-slate-800/50 p-1 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
-            <button
-              onClick={() => {
-                if (scaleFactor === 1) setScaleFactor(0.5);
-                else if (scaleFactor > 1) setScaleFactor(Math.ceil(scaleFactor) - 1);
-              }}
-              disabled={scaleFactor <= 0.5}
-              className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-slate-400 transition-all font-bold text-xl"
-              aria-label="Decrease scale"
-            >
-              −
-            </button>
-
-            <div className="relative flex items-center px-2">
-              <input
-                type="number"
-                step="0.1"
-                min="0.1"
-                value={scaleFactor}
-                onChange={(e) => {
-                  const val = parseFloat(e.target.value);
-                  if (!isNaN(val) && val >= 0.1) setScaleFactor(val);
+      <div className="flex flex-wrap items-center justify-between gap-6 mb-8 pb-6 border-b border-slate-100 dark:border-slate-800">
+        <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-col gap-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 ml-1">
+              Recipe Scale
+            </span>
+            <div className="flex items-center bg-slate-50 dark:bg-slate-800/50 p-1 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm">
+              <button
+                onClick={() => {
+                  if (scaleFactor === 1) setScaleFactor(0.5);
+                  else if (scaleFactor > 1) setScaleFactor(Math.ceil(scaleFactor) - 1);
                 }}
-                className="w-16 bg-transparent border-none text-center font-bold text-slate-800 dark:text-slate-100 focus:ring-0 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-              />
-            </div>
+                disabled={scaleFactor <= 0.5}
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-slate-400 transition-all font-bold text-xl"
+                aria-label="Decrease scale"
+              >
+                −
+              </button>
 
-            <button
-              onClick={() => {
-                if (scaleFactor === 0.5) setScaleFactor(1);
-                else setScaleFactor(Math.floor(scaleFactor) + 1);
-              }}
-              className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all font-bold text-xl"
-              aria-label="Increase scale"
-            >
-              +
-            </button>
+              <div className="relative flex items-center px-2">
+                <input
+                  type="number"
+                  step="0.1"
+                  min="0.1"
+                  value={scaleFactor}
+                  onChange={(e) => {
+                    const val = parseFloat(e.target.value);
+                    if (!isNaN(val) && val >= 0.1) setScaleFactor(val);
+                  }}
+                  className="w-16 bg-transparent border-none text-center font-bold text-slate-800 dark:text-slate-100 focus:ring-0 focus:outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                />
+              </div>
+
+              <button
+                onClick={() => {
+                  if (scaleFactor === 0.5) setScaleFactor(1);
+                  else setScaleFactor(Math.floor(scaleFactor) + 1);
+                }}
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all font-bold text-xl"
+                aria-label="Increase scale"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 ml-1">
+              Units
+            </span>
+            <div className="flex items-center bg-slate-50 dark:bg-slate-800/50 p-1 rounded-xl border border-slate-100 dark:border-slate-700 shadow-sm gap-1">
+              {(["original", "smart", "metric", "us"] as UnitSystem[]).map((sys) => (
+                <button
+                  key={sys}
+                  onClick={() => setUnitSystem(sys)}
+                  className={`px-3 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tight transition-all ${
+                    unitSystem === sys
+                      ? "bg-white dark:bg-slate-700 text-blue-600 dark:text-blue-400 shadow-sm"
+                      : "text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                  }`}
+                >
+                  {sys}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -87,11 +112,14 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
             </button>
           )}
 
-          {scaleFactor !== 1 && (
+          {(scaleFactor !== 1 || unitSystem !== "original") && (
             <button
-              onClick={() => setScaleFactor(1)}
+              onClick={() => {
+                setScaleFactor(1);
+                setUnitSystem("original");
+              }}
               className="flex items-center gap-2 px-4 py-2 bg-slate-50 dark:bg-slate-800/40 text-slate-600 dark:text-slate-400 rounded-xl text-sm font-bold hover:bg-blue-50 dark:hover:bg-blue-900/30 hover:text-blue-600 dark:hover:text-blue-400 transition-all border border-slate-100 dark:border-slate-700 shadow-sm animate-in fade-in slide-in-from-right-4 duration-300"
-              aria-label="Reset scale to 1"
+              aria-label="Reset all settings"
             >
               <span className="text-lg leading-none">↺</span>
               Reset
@@ -135,7 +163,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
           </h2>
           <ul>
             {recipe.ingredients.map((ingredient) => (
-              <Ingredient key={ingredient.name} ingredient={ingredient} scaleFactor={scaleFactor} />
+              <Ingredient key={ingredient.name} ingredient={ingredient} scaleFactor={scaleFactor} unitSystem={unitSystem} />
             ))}
           </ul>
         </section>
@@ -152,7 +180,7 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
                   {index + 1}
                 </span>
                 <div className="pt-1.5 text-slate-700 dark:text-slate-300 leading-relaxed">
-                  <InstructionStep step={step} ingredients={recipe.ingredients} scaleFactor={scaleFactor} />
+                  <InstructionStep step={step} ingredients={recipe.ingredients} scaleFactor={scaleFactor} unitSystem={unitSystem} />
                 </div>
               </li>
             ))}
