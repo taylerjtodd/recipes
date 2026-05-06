@@ -658,5 +658,51 @@
     "servings": 1,
     "serving_size": 8,
     "serving_size_units": "tsp"
+  },
+  {
+    "title": "Tuscan Heat Spice",
+    "category": "Spice Blend",
+    "tags": [
+      "seasoning",
+      "hellofresh"
+    ],
+    "ingredients": [
+      {
+        "name": "Basil",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Rosemary",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Oregano",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Garlic Powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Low Heat Cayenne",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Fennel",
+        "quantity": 0.25,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      "Mix {{basil}}, {{rosemary}}, {{oregano}}, {{garlic powder}}, {{low heat cayenne}}, and {{ground fennel}} together."
+    ],
+    "servings": 1,
+    "serving_size": 1,
+    "serving_size_units": "tbsp"
   }
 ]
