@@ -1,89 +1,128 @@
 [
   {
-    "name": "Al Pastor Marinade",
+    "title": "Al Pastor Marinade",
+    "category": "Marinade",
+    "tags": [
+      "mexican",
+      "pork",
+      "marinade"
+    ],
     "ingredients": [
       {
-        "item": "Guajillo chilies (dried)",
-        "amount": "2-3 whole chilies (~15g)"
+        "name": "Guajillo Chilies",
+        "quantity": 3,
+        "unit": "whole",
+        "notes": "dried, toasted, de-seeded, and soaked"
       },
       {
-        "item": "Ancho chile powder",
-        "amount": "1 tsp"
+        "name": "Ancho Chile Powder",
+        "quantity": 1,
+        "unit": "tsp"
       },
       {
-        "item": "Chipotle peppers (dry) or chipotle powder",
-        "amount": "1-2 peppers or 0.5 tsp powder"
+        "name": "Chipotle Peppers",
+        "quantity": 1,
+        "unit": "whole",
+        "notes": "dried; or substitute 0.5 tsp chipotle powder"
       },
       {
-        "item": "Pineapple juice",
-        "amount": "1/2 cup (120 ml)"
+        "name": "Pineapple Juice",
+        "quantity": 0.5,
+        "unit": "cup"
       },
       {
-        "item": "Apple cider vinegar",
-        "amount": "2 Tbsp"
+        "name": "Apple Cider Vinegar",
+        "quantity": 2,
+        "unit": "tbsp"
       },
       {
-        "item": "Orange juice",
-        "amount": "1/4 cup (60 ml)"
+        "name": "Orange Juice",
+        "quantity": 0.25,
+        "unit": "cup"
       },
       {
-        "item": "Garlic, minced",
-        "amount": "3 cloves"
+        "name": "Garlic",
+        "quantity": 3,
+        "unit": "clove",
+        "notes": "minced"
       },
       {
-        "item": "Onion, finely grated",
-        "amount": "1/2 medium"
+        "name": "White Onion",
+        "quantity": 0.5,
+        "unit": "whole",
+        "notes": "finely grated"
       },
       {
-        "item": "Achiote (annatto) paste",
-        "amount": "2 Tbsp"
+        "name": "Achiote (Annatto) Paste",
+        "quantity": 2,
+        "unit": "tbsp"
       },
       {
-        "item": "Mexican oregano, dried",
-        "amount": "1 tsp"
+        "name": "Mexican Oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "dried"
       },
       {
-        "item": "Cumin, ground",
-        "amount": "1/2 tsp"
+        "name": "Cumin",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "notes": "ground"
       },
       {
-        "item": "Paprika (sweet or smoked)",
-        "amount": "1/2 tsp"
+        "name": "Paprika",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "notes": "sweet or smoked"
       },
       {
-        "item": "Brown sugar (optional)",
-        "amount": "1 Tbsp"
+        "name": "Brown Sugar",
+        "quantity": 1,
+        "unit": "tbsp",
+        "notes": "optional"
       },
       {
-        "item": "Salt",
-        "amount": "1 tsp (adjust)"
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "adjust to taste"
       },
       {
-        "item": "Black pepper, freshly ground",
-        "amount": "1/4 tsp"
+        "name": "Black Pepper",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "notes": "freshly ground"
       },
       {
-        "item": "Olive oil",
-        "amount": "2 Tbsp"
+        "name": "Olive Oil",
+        "quantity": 2,
+        "unit": "tbsp"
       },
       {
-        "item": "Fresh cilantro, chopped (optional)",
-        "amount": "2 Tbsp"
+        "name": "Fresh Cilantro",
+        "quantity": 2,
+        "unit": "tbsp",
+        "notes": "chopped, optional"
       },
       {
-        "item": "Fresh lime juice (optional)",
-        "amount": "1 Tbsp"
+        "name": "Lime Juice",
+        "quantity": 1,
+        "unit": "tbsp",
+        "notes": "fresh, optional"
       }
     ],
     "steps": [
-      "Toast and de‑seed the dried guajillo chilies, then soak in hot water for 15 minutes and drain.",
+      "Toast and de-seed the dried guajillo chilies, then soak in hot water for 15 minutes and drain.",
       "Blend soaked guajillos (with a splash of soaking liquid) together with chipotle, pineapple juice, orange juice, apple cider vinegar, garlic, onion, achiote paste, ancho powder, oregano, cumin, paprika, brown sugar, salt, and black pepper until smooth.",
-      "While blending on low, slowly drizzle olive oil to emulsify the sauce.",
-      "Taste and adjust seasoning; optionally add lime juice for extra tang.",
+      "While blending on low, slowly drizzle in olive oil to emulsify the sauce.",
+      "Taste and adjust seasoning; optionally stir in fresh lime juice for extra tang.",
       "Marinate thinly sliced pork (or chicken, tofu, etc.) in the sauce, refrigerating at least 4 hours or overnight.",
-      "Grill, broil, or pan‑sear the marinated protein until caramelized and cooked through. Serve on warm corn tortillas with pineapple chunks, cilantro, onion, and a squeeze of lime."
+      "Grill, broil, or pan-sear the marinated protein until caramelized and cooked through. Serve on warm corn tortillas with pineapple chunks, cilantro, onion, and a squeeze of lime."
     ],
-    "notes": "If only chipotle powder is available, use ½ tsp. For a thinner sauce add extra pineapple juice. Vegetarian option: use jackfruit or portobello mushrooms. The sauce stores in the fridge up to 2 weeks or frozen in ice‑cube trays."
+    "servings": 6,
+    "serving_size": 4,
+    "serving_size_units": "oz",
+    "notes": "If only chipotle powder is available, use 0.5 tsp. For a thinner sauce add extra pineapple juice. Vegetarian option: use jackfruit or portobello mushrooms. The sauce stores in the fridge up to 2 weeks or frozen in ice-cube trays."
   },
   {
     "title": "Bean Dip",
