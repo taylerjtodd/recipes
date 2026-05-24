@@ -664,6 +664,129 @@
     "serving_size_units": "lb"
   },
   {
+    "title": "Mexican-Style Pinto Beans (Instant Pot)",
+    "category": "Side Dish",
+    "tags": [
+      "mexican",
+      "beans",
+      "vegetarian",
+      "instant pot",
+      "dried beans"
+    ],
+    "ingredients": [
+      {
+        "name": "Dried Pinto Beans",
+        "quantity": 1,
+        "unit": "lb",
+        "notes": "rinsed and sorted, no soaking needed"
+      },
+      {
+        "name": "Chicken Broth",
+        "quantity": 4,
+        "unit": "cup",
+        "notes": "or vegetable broth to keep vegetarian"
+      },
+      {
+        "name": "Water",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "White Onion",
+        "quantity": 1,
+        "unit": "whole",
+        "notes": "halved"
+      },
+      {
+        "name": "Garlic",
+        "quantity": 4,
+        "unit": "clove",
+        "notes": "smashed"
+      },
+      {
+        "name": "Jalapeño or Chipotle",
+        "quantity": 1,
+        "unit": "whole",
+        "notes": "halved, seeds removed for less heat"
+      },
+      {
+        "name": "Dried Epazote",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "optional but traditional; substitute dried oregano"
+      },
+      {
+        "name": "Mexican Oregano",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "dried"
+      },
+      {
+        "name": "Cumin",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "ground"
+      },
+      {
+        "name": "Chili Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Smoked Paprika",
+        "quantity": 0.5,
+        "unit": "tsp",
+        "notes": "halve if using chipotles"
+      },
+      {
+        "name": "Bay Leaves",
+        "quantity": 2,
+        "unit": "whole"
+      },
+      {
+        "name": "Lard or Bacon Fat",
+        "quantity": 1,
+        "unit": "tbsp",
+        "notes": "or olive oil for vegetarian"
+      },
+      {
+        "name": "Salt",
+        "quantity": 1.5,
+        "unit": "tsp",
+        "notes": "add after cooking; see notes"
+      },
+      {
+        "name": "Fresh Cilantro",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "chopped, for serving"
+      },
+      {
+        "name": "Lime",
+        "quantity": 1,
+        "unit": "whole",
+        "notes": "juiced, for serving"
+      }
+    ],
+    "steps": [
+      "Rinse and sort the dried pinto beans, discarding any shriveled beans or debris. No soaking is required.",
+      "Set the Instant Pot to Sauté (Normal). Add lard or olive oil and heat until shimmering.",
+      "Add the halved onion cut-side down and the smashed garlic cloves. Sauté for 3–4 minutes until lightly golden and fragrant.",
+      "Add the cumin, chili powder, smoked paprika, and Mexican oregano. Stir and cook for 1 minute to bloom the spices.",
+      "Pour in the chicken broth and water, scraping up any browned bits from the bottom of the pot.",
+      "Add the rinsed pinto beans, jalapeño, bay leaves, and epazote (if using). Stir to combine. Do NOT add salt yet — it can toughen the bean skins.",
+      "Secure the lid, set the vent to Sealing, and cook on Manual / Pressure Cook (High) for 45 minutes.",
+      "Allow the pressure to release naturally for 20 minutes, then carefully quick-release any remaining pressure.",
+      "Remove and discard the onion halves, jalapeño, and bay leaves.",
+      "Stir in the salt, taste, and adjust seasoning. For creamier beans, use a wooden spoon or potato masher to smash about one-quarter of the beans against the side of the pot.",
+      "Serve topped with fresh cilantro and a squeeze of lime juice."
+    ],
+    "servings": 6,
+    "serving_size": 1,
+    "serving_size_units": "cup",
+    "notes": "Salt is added after cooking — adding it beforehand can prevent beans from fully softening. If your beans are very old (over a year), increase cook time to 50–55 minutes. Leftovers keep in the fridge for up to 5 days and freeze well for 3 months. Use these as a base for refried beans by mashing and frying in a skillet with a little lard or oil."
+  },
+  {
     "title": "Overnight Oats Base",
     "category": "Breakfast",
     "tags": [],
