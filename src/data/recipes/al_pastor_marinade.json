@@ -1,0 +1,32 @@
+{
+  "name": "Al Pastor Marinade",
+  "ingredients": [
+    {"item": "Guajillo chilies (dried)", "amount": "2-3 whole chilies (~15g)"},
+    {"item": "Ancho chile powder", "amount": "1 tsp"},
+    {"item": "Chipotle peppers (dry) or chipotle powder", "amount": "1-2 peppers or 0.5 tsp powder"},
+    {"item": "Pineapple juice", "amount": "1/2 cup (120 ml)"},
+    {"item": "Apple cider vinegar", "amount": "2 Tbsp"},
+    {"item": "Orange juice", "amount": "1/4 cup (60 ml)"},
+    {"item": "Garlic, minced", "amount": "3 cloves"},
+    {"item": "Onion, finely grated", "amount": "1/2 medium"},
+    {"item": "Achiote (annatto) paste", "amount": "2 Tbsp"},
+    {"item": "Mexican oregano, dried", "amount": "1 tsp"},
+    {"item": "Cumin, ground", "amount": "1/2 tsp"},
+    {"item": "Paprika (sweet or smoked)", "amount": "1/2 tsp"},
+    {"item": "Brown sugar (optional)", "amount": "1 Tbsp"},
+    {"item": "Salt", "amount": "1 tsp (adjust)"},
+    {"item": "Black pepper, freshly ground", "amount": "1/4 tsp"},
+    {"item": "Olive oil", "amount": "2 Tbsp"},
+    {"item": "Fresh cilantro, chopped (optional)", "amount": "2 Tbsp"},
+    {"item": "Fresh lime juice (optional)", "amount": "1 Tbsp"}
+  ],
+  "steps": [
+    "Toast and de‑seed the dried guajillo chilies, then soak in hot water for 15 minutes and drain.",
+    "Blend soaked guajillos (with a splash of soaking liquid) together with chipotle, pineapple juice, orange juice, apple cider vinegar, garlic, onion, achiote paste, ancho powder, oregano, cumin, paprika, brown sugar, salt, and black pepper until smooth.",
+    "While blending on low, slowly drizzle olive oil to emulsify the sauce.",
+    "Taste and adjust seasoning; optionally add lime juice for extra tang.",
+    "Marinate thinly sliced pork (or chicken, tofu, etc.) in the sauce, refrigerating at least 4 hours or overnight.",
+    "Grill, broil, or pan‑sear the marinated protein until caramelized and cooked through. Serve on warm corn tortillas with pineapple chunks, cilantro, onion, and a squeeze of lime."
+  ],
+  "notes": "If only chipotle powder is available, use ½ tsp. For a thinner sauce add extra pineapple juice. Vegetarian option: use jackfruit or portobello mushrooms. The sauce stores in the fridge up to 2 weeks or frozen in ice‑cube trays."
+}
