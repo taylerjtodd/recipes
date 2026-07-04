@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Key Lime Pie Chia Pudding",
+    "category": "Breakfast",
+    "tags": [
+      "meal prep"
+    ],
+    "ingredients": [
+      {
+        "name": "Vanilla Greek Yogurt",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Unsweetened Vanilla Almond Milk",
+        "quantity": 0.667,
+        "unit": "cup"
+      },
+      {
+        "name": "Honey",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lime Juice",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Vanilla",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Lime Zest",
+        "quantity": 1,
+        "unit": "whole"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Graham Crackers",
+        "quantity": 3,
+        "unit": "whole",
+        "notes": "crushed"
+      },
+      {
+        "name": "Sliced Almonds",
+        "quantity": 3,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      "Mix {{Vanilla Greek Yogurt}} with {{Unsweetened Vanilla Almond Milk}}, {{Honey}}, {{Lime Juice}}, {{Vanilla}}, and {{Lime Zest}}.",
+      "Whisk in {{Chia Seeds}}.",
+      "Refrigerate overnight.",
+      "To serve, split into 2 bowls and layer (or just top) with crushed {{Graham Crackers}} and {{Sliced Almonds}}."
+    ],
+    "servings": 2,
+    "serving_size": 1,
+    "serving_size_units": "bowl"
+  }
+]
