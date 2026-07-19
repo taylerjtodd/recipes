@@ -125,6 +125,99 @@
     "notes": "If only chipotle powder is available, use 0.5 tsp. For a thinner sauce add extra pineapple juice. Vegetarian option: use jackfruit or portobello mushrooms. The sauce stores in the fridge up to 2 weeks or frozen in ice-cube trays."
   },
   {
+    "title": "Blueberry Crisp",
+    "category": "Dessert",
+    "tags": [],
+    "ingredients": [
+      {
+        "name": "Old Fashioned Oats",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Flour",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "Brown Sugar",
+        "quantity": 0.5,
+        "unit": "cup",
+        "key": "brown-sugar-1"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": 1,
+        "unit": "tsp",
+        "key": "cinnamon-1"
+      },
+      {
+        "name": "Salt",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "key": "salt-1"
+      },
+      {
+        "name": "Oil",
+        "quantity": 5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Apples",
+        "quantity": 5,
+        "unit": "cup"
+      },
+      {
+        "name": "Blueberries",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "Brown Sugar",
+        "quantity": 0.5,
+        "unit": "cup",
+        "key": "brown-sugar-2"
+      },
+      {
+        "name": "Cornstarch",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Lemon Juice",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Vanilla",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Cinnamon",
+        "quantity": 1,
+        "unit": "tsp",
+        "key": "cinnamon-2"
+      },
+      {
+        "name": "Salt",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "key": "salt-2"
+      }
+    ],
+    "steps": [
+      "Lightly grease a 9x9 pan and preheat oven to 350.",
+      "Combine {{Old Fashioned Oats}}, {{Old Fashioned Oats}}, {{brown-sugar-1}}, {{cinnamon-2}}, {{salt-2}} and {{Oil}} in a bowl. Refrigerate until ready.",
+      "Mix {{Apples}}, {{Blueberries}}, {{brown-sugar-2}}, {{Cornstarch}}, {{Lemon Juice}}, {{Vanilla}}, {{cinnamon-2}} and {{salt-2}} in a bowl.",
+      "Assemble crisp and bake for 45-60 minutes.",
+      "Cool for 20-30 minutes."
+    ],
+    "servings": 5,
+    "serving_size": 1,
+    "serving_size_units": "dish"
+  },
+  {
     "title": "Bean Dip",
     "category": "Appetizer",
     "tags": [
