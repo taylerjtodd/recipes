@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "@/components/core/Link";
 import { SettingsMenu } from "./SettingsMenu";
+import { StarredRecipesDrawer } from "./StarredRecipesDrawer";
 import React from "react";
 
 export function Navbar() {
@@ -75,6 +76,7 @@ export function Navbar() {
 
           {/* Right side Section */}
           <div className="flex items-center">
+            <StarredRecipesDrawer />
             <SettingsMenu />
           </div>
         </div>

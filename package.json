@@ -10,10 +10,14 @@
     "combine-recipes": "node scripts/combine-recipes.mjs"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.28.0",
     "next": "16.2.2",
     "next-themes": "^0.4.4",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "tailwind-merge": "^3.6.0",
+    "vaul": "^1.1.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.2.2",

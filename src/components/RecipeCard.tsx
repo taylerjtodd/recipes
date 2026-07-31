@@ -7,15 +7,34 @@ import { UnitSystem } from "@/utils/units";
 import InstructionStep from "@/components/InstructionStep";
 import Ingredient from "@/components/Ingredient";
 import Paper from "@/components/core/Paper";
+import { useStarredRecipes } from "@/hooks/useStarredRecipes";
+import { Star } from "lucide-react";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   const [scaleFactor, setScaleFactor] = useState(1);
   const [unitSystem, setUnitSystem] = useState<UnitSystem>("original");
+  const { isStarred, toggleStar, isMounted } = useStarredRecipes();
 
   return (
     <Paper level={1} className="p-4 md:p-8">
       <div className="flex flex-wrap items-center justify-between gap-6 mb-8 pb-6 border-b border-slate-100 dark:border-slate-800">
         <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-col gap-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 ml-1">
+              Favorite
+            </span>
+            <button
+              onClick={() => toggleStar(recipe.title)}
+              className={`flex items-center justify-center bg-slate-50 dark:bg-slate-800/50 p-2 rounded-xl border shadow-sm transition-all h-[50px] w-[50px] ${
+                isMounted && isStarred(recipe.title) 
+                  ? "border-amber-400 text-amber-500 dark:border-amber-500/50 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20" 
+                  : "border-slate-100 dark:border-slate-700 text-slate-400 dark:text-slate-500 hover:text-amber-500 hover:border-amber-200 dark:hover:border-slate-600"
+              }`}
+              aria-label={isMounted && isStarred(recipe.title) ? "Unstar recipe" : "Star recipe"}
+            >
+              <Star className={`w-6 h-6 ${isMounted && isStarred(recipe.title) ? "fill-current" : ""}`} />
+            </button>
+          </div>
           <div className="flex flex-col gap-1.5">
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500 ml-1">
               Recipe Scale
