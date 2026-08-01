@@ -1,7 +1,7 @@
 "use client";
 
 import { useStarredRecipes } from "@/hooks/useStarredRecipes";
-import { Star } from "lucide-react";
+import { Star, ShoppingCart } from "lucide-react";
 import Link from "@/components/core/Link";
 import {
   Drawer,
@@ -67,6 +67,16 @@ export function StarredRecipesDrawer() {
           </div>
           <DrawerFooter>
             <DrawerClose asChild>
+              <Link
+                href="/shopping-list"
+                unstyled
+                className="flex items-center justify-center gap-2 w-full rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white no-underline hover:bg-emerald-700 dark:bg-emerald-700 dark:hover:bg-emerald-600 transition-colors"
+              >
+                <ShoppingCart className="w-4 h-4" />
+                Shopping List
+              </Link>
+            </DrawerClose>
+            <DrawerClose asChild>
               <button className="w-full rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 dark:bg-gray-100 dark:text-gray-900 dark:hover:bg-gray-200">
                 Close
               </button>
@@ -77,3 +87,4 @@ export function StarredRecipesDrawer() {
     </Drawer>
   );
 }
+
