@@ -483,6 +483,81 @@
     "serving_size_units": "lb"
   },
   {
+    "title": "Cherry Pistachio Protein Balls",
+    "category": "Snack",
+    "tags": [
+      "snack",
+      "no bake",
+      "meal prep",
+      "protein"
+    ],
+    "ingredients": [
+      {
+        "name": "Rolled Oats",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Almond Butter",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "creamy"
+      },
+      {
+        "name": "Tahini",
+        "quantity": 0.25,
+        "unit": "cup",
+        "notes": "well-stirred"
+      },
+      {
+        "name": "Honey",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "name": "Vanilla Protein Powder",
+        "quantity": 1,
+        "unit": "scoop",
+        "notes": "1 serving (~30g)"
+      },
+      {
+        "name": "Ground Flaxseed",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Pistachios",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "shelled, roughly chopped"
+      },
+      {
+        "name": "Dried Cherries",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "roughly chopped"
+      },
+      {
+        "name": "Dark Chocolate",
+        "quantity": 1,
+        "unit": "oz",
+        "notes": "optional, melted for drizzling"
+      }
+    ],
+    "steps": [
+      "In a large bowl, whisk together {{Almond Butter}}, {{Tahini}}, and {{Honey}} until smooth and thoroughly combined.",
+      "Stir in {{Vanilla Protein Powder}} and {{Ground Flaxseed}} until fully incorporated.",
+      "Fold in {{Rolled Oats}}, chopped {{Pistachios}}, and chopped {{Dried Cherries}}. Mix thoroughly until a uniform, thick dough forms. (If too crumbly, add 1-2 teaspoons of honey or water; if too sticky, add an extra tablespoon of oats.)",
+      "Cover and chill in the refrigerator for 20-30 minutes to firm up the dough and allow the oats and flaxseed to absorb moisture.",
+      "Scoop about 1 tablespoon of dough at a time and roll firmly between your palms into 1-inch balls.",
+      "If desired, melt {{Dark Chocolate}} in the microwave or a double boiler and drizzle over the balls. Refrigerate for 10 minutes to set the chocolate.",
+      "Store in an airtight container in the refrigerator for up to 1-2 weeks, or in the freezer for up to 3 months."
+    ],
+    "servings": 12,
+    "serving_size": 1,
+    "serving_size_units": "balls"
+  },
+  {
     "title": "Chicken Alfredo",
     "category": "Dinner",
     "tags": [
@@ -598,6 +673,68 @@
     "servings": 1,
     "serving_size": 1,
     "serving_size_units": "bowl"
+  },
+  {
+    "title": "Cranberry Walnut Protein Balls",
+    "category": "Snack",
+    "tags": [
+      "snack",
+      "no bake",
+      "meal prep",
+      "protein"
+    ],
+    "ingredients": [
+      {
+        "name": "Peanut Butter",
+        "quantity": 0.5,
+        "unit": "cup",
+        "notes": "creamy or crunchy"
+      },
+      {
+        "name": "Honey",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "name": "Vanilla Protein Powder",
+        "quantity": 1,
+        "unit": "scoop",
+        "notes": "1 serving (~30g)"
+      },
+      {
+        "name": "Chia Seeds",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Rolled Oats",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "Walnuts",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "roughly chopped"
+      },
+      {
+        "name": "Dried Cranberries",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "roughly chopped"
+      }
+    ],
+    "steps": [
+      "In a medium bowl, stir together {{Peanut Butter}} and {{Honey}} until smooth and thoroughly combined. (If the peanut butter is firm, microwave for 10-15 seconds to soften.)",
+      "Stir in {{Vanilla Protein Powder}} and {{Chia Seeds}} until incorporated.",
+      "Fold in {{Rolled Oats}}, {{Walnuts}}, and {{Dried Cranberries}}. Mix thoroughly until a thick, uniform dough forms. (If too crumbly, add 1-2 teaspoons of honey, peanut butter, or warm water; if too sticky, add an extra tablespoon of oats.)",
+      "Cover and chill in the refrigerator for 20-30 minutes to make the dough easier to handle and allow the chia seeds and oats to absorb moisture.",
+      "Scoop about 1 tablespoon of dough at a time and roll firmly between your palms into 1-inch balls.",
+      "Store in an airtight container in the refrigerator for up to 1-2 weeks, or in the freezer for up to 3 months."
+    ],
+    "servings": 12,
+    "serving_size": 1,
+    "serving_size_units": "balls"
   },
   {
     "title": "Ham and Bean Soup",
