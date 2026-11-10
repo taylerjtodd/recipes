@@ -1,0 +1,134 @@
+[
+  {
+    "title": "Smoky Turkey Chili",
+    "category": "Main Dish",
+    "tags": [
+      "chili",
+      "turkey",
+      "smoky",
+      "soup",
+      "spicy",
+      "competition",
+      "gluten-free",
+      "meal prep"
+    ],
+    "ingredients": [
+      {
+        "name": "Ground Turkey",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "name": "Light Red Kidney Beans",
+        "quantity": 1,
+        "unit": "can",
+        "notes": "15 oz, drained"
+      },
+      {
+        "name": "Dark Red Kidney Beans",
+        "quantity": 1,
+        "unit": "can",
+        "notes": "15 oz, drained"
+      },
+      {
+        "name": "Black Beans",
+        "quantity": 1,
+        "unit": "can",
+        "notes": "15 oz, drained"
+      },
+      {
+        "name": "Poblano Pepper",
+        "quantity": 1,
+        "unit": "",
+        "notes": "diced"
+      },
+      {
+        "name": "Chipotle Pepper",
+        "quantity": 1,
+        "unit": "",
+        "notes": "homemade smoked and frozen; character is similar to a rehydrated dried chipotle — minced or finely diced"
+      },
+      {
+        "name": "V8 Juice",
+        "quantity": 3,
+        "unit": "can",
+        "notes": "12 oz each (36 oz total); yields a soupier chili that thickens with simmering"
+      },
+      {
+        "name": "Pre-Minced Garlic",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Cumin",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Onion Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ancho Chili Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Guajillo Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Chili Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "New Mexico Chili Powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Mexican Oregano",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "notes": "large pinch; added in the last 5 minutes of simmering to preserve its bright, citrusy aroma"
+      },
+      {
+        "name": "Cayenne Pepper",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "optional; omit for a mild batch, include for the spicy competition version"
+      }
+    ],
+    "steps": [
+      "Dice {{Poblano Pepper}} and mince or finely dice {{Chipotle Pepper}}. In a large pot or Dutch oven over medium-high heat, cook the peppers together with {{Ground Turkey}}, breaking up the meat, until cooked through and no longer pink, about 7–10 minutes. Drain excess fat if needed.",
+      "Add {{Pre-Minced Garlic}} and cook for 1 minute until fragrant.",
+      "Pour in {{V8 Juice}} and stir to combine.",
+      "Add {{Ground Cumin}}, {{Onion Powder}}, {{Ancho Chili Powder}}, {{Guajillo Powder}}, {{Chili Powder}}, {{New Mexico Chili Powder}}, {{Paprika}}, {{Salt}}, and {{Black Pepper}}. If making the spicy competition batch, add {{Cayenne Pepper}} as well. Stir to fully incorporate.",
+      "Add the drained {{Light Red Kidney Beans}}, {{Dark Red Kidney Beans}}, and {{Black Beans}}. Stir to combine.",
+      "Bring to a boil, then reduce heat and simmer uncovered for about 15 minutes, stirring occasionally, until the chili thickens to your liking.",
+      "Stir in {{Mexican Oregano}} and simmer for a final 5 minutes. Taste and adjust seasoning before serving."
+    ],
+    "servings": 6,
+    "serving_size": 1.5,
+    "serving_size_units": "cups"
+  }
+]
+
