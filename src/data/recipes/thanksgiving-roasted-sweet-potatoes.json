@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Thanksgiving Roasted Sweet Potatoes with Cinnamon Glaze",
+    "category": "Side Dish",
+    "tags": [
+      "thanksgiving",
+      "side dish",
+      "sweet potato",
+      "low saturated fat",
+      "roasted",
+      "holiday"
+    ],
+    "ingredients": [
+      {
+        "name": "Sweet Potatoes",
+        "quantity": 3,
+        "unit": "lbs",
+        "notes": "about 4 medium, peeled and cut into 1-inch cubes"
+      },
+      {
+        "name": "Olive Oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "Maple Syrup",
+        "quantity": 3,
+        "unit": "tbsp",
+        "notes": "pure, divided"
+      },
+      {
+        "name": "Ground Cinnamon",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "Ground Nutmeg",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "Kosher Salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Black Pepper",
+        "quantity": 0.25,
+        "unit": "tsp",
+        "notes": "freshly ground"
+      },
+      {
+        "name": "Vanilla Extract",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "Part-Skim Ricotta",
+        "quantity": 0.75,
+        "unit": "cup",
+        "notes": "cold, drained in a fine mesh strainer for 15 minutes if watery"
+      },
+      {
+        "name": "Powdered Sugar",
+        "quantity": 1,
+        "unit": "tbsp",
+        "notes": "optional, to taste"
+      },
+      {
+        "name": "Orange Zest",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "from about half a large orange"
+      },
+      {
+        "name": "Dried Cranberries",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "name": "Pecans",
+        "quantity": 0.333,
+        "unit": "cup",
+        "notes": "roughly chopped"
+      },
+      {
+        "name": "Fresh Thyme",
+        "quantity": 1,
+        "unit": "tsp",
+        "notes": "optional, leaves only, for a subtle savory note"
+      }
+    ],
+    "steps": [
+      "Preheat your oven to 425°F (220°C). Line a large rimmed baking sheet with parchment paper.",
+      "In a large bowl, toss {{Sweet Potatoes}} with {{Olive Oil}}, 2 tablespoons of {{Maple Syrup}}, {{Ground Cinnamon}}, {{Ground Nutmeg}}, {{Kosher Salt}}, and {{Black Pepper}} until evenly coated.",
+      "Spread the sweet potatoes in a single layer on the prepared baking sheet, leaving space between pieces. Roast for 20 minutes, flip each piece, then roast for another 15–20 minutes until caramelized on the edges and tender through the center when pierced with a fork.",
+      "While the sweet potatoes roast, make the whipped ricotta topping: combine {{Part-Skim Ricotta}}, the remaining 1 tablespoon of {{Maple Syrup}}, {{Vanilla Extract}}, and {{Orange Zest}} in a food processor or blender. Process for 60–90 seconds until completely smooth and fluffy. Taste and stir in {{Powdered Sugar}} if desired. Refrigerate until ready to serve.",
+      "In a dry skillet over medium heat, toast {{Pecans}}, stirring frequently, for 3–4 minutes until fragrant and lightly golden. Remove from heat immediately and set aside.",
+      "When the sweet potatoes come out of the oven, transfer them to a serving platter. Dollop or spread the whipped ricotta over the top.",
+      "Scatter {{Dried Cranberries}} and toasted {{Pecans}} evenly over the dish. Garnish with {{Fresh Thyme}} leaves if using. Serve warm."
+    ],
+    "servings": 6,
+    "serving_size": 1,
+    "serving_size_units": "cup"
+  }
+]
+
